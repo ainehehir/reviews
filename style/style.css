@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+body {
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+main {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.title {
+  text-align: center;
+}
+
+.underline {
+  width: 9em;
+  height: 0.25em;
+  background-color: hsl(205, 78%, 60%);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  width: 80vh;
+  max-width: 1170px;
+}
+
+.review {
+  background-color: #fff;
+  border-radius: 0.25em;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding-top: 1em;
+  padding-bottom: 1em;
+  text-align: center;
+}
+
+.img-container {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  border-radius: 50%;
+  margin-top: 2em;
+}
+
+img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  position: relative;
+}
+
+.img-container::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f10e";
+  font-weight: 900;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2.5em;
+  height: 2.5em;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  transform: translateY(25%);
+  color: #fff;
+  background: hsl(205, 78%, 60%);
+}
+
+.img-container::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: hsl(205, 78%, 60%);
+  position: absolute;
+  top: -0.25em;
+  right: -0.5em;
+  border-radius: 50%;
+}
+
+#author {
+  margin-bottom: 0.25em;
+}
+
+#job {
+  margin-bottom: 0.25em;
+  text-transform: uppercase;
+  color: hsl(205, 78%, 60%);
+  font-size: 0.85rem;
+}
+
+#info {
+  margin-bottom: 0.75em;
+}
+.prev-btn,
+.next-btn {
+  color: hsl(205, 90%, 76%);
+  font-size: 1.25rem;
+  background: transparent;
+  border-color: transparent;
+  margin: 0 0.5em;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+.prev-btn:hover,
+.next-btn:hover {
+  color: hsl(205, 78%, 60%);
+}
+.random-btn {
+  margin-top: 0.5rem;
+  background: hsl(205, 100%, 96%);
+  color: hsl(205, 78%, 60%);
+  padding: 0.25em 0.5em;
+  text-transform: capitalize;
+  border-radius: 0.25em;
+  transition: all 0.3s linear;
+  border-color: hsl(205, 78%, 60%);
+  cursor: pointer;
+}
+.random-btn:hover {
+  background: hsl(205, 78%, 60%);
+  color: hsl(205, 86%, 17%);
+}
